@@ -7,6 +7,28 @@
 </head>
 <body>
     <h1>blimbing</h1>
-    <p>its the best</p>
+    <h2>its the best</h2>
+    <p>pupel thet should becom climbers:</p>
+
+     {% if likes_same_sport == True %}
+
+                <p> like climbing: </p>
+            <ul>
+            {% for climb in favplyers %}
+            <li> {{climb}} </li>
+            {% endfor %}
+             </ul>  
+             
+            {% else %}
+                <p> dint like climbing: </p>
+            {% endif %}
+            <h2> favplyers: </h2>
+
+
+   
+    
+
+
+
 </body>
 </html>
